@@ -28,7 +28,6 @@ a {
     left: 0;
     width: 100%;
     transition: all .75s;
-    /* border: 1px solid red; */
 }
 
 header {
@@ -37,7 +36,7 @@ header {
     align-items: flex-end;
     width: 100%;
     height: 65vh;
-    padding: 7%;
+    padding: 7vw;
     top: 100vh;
     left: 0;
     background-color: var(--color);
@@ -69,8 +68,8 @@ nav li a:hover:before {
 
 .hamburgerBtn {
     position: fixed;
-    top: 5vw;
-    right: 5vw;
+    top: 3vw;
+    right: 3vw;
     width: 38px;
     height: 30px;
 }
@@ -164,7 +163,6 @@ footer {
 
 
 /* 스크롤바*/
-/* ::-webkit-scrollbar { display: none; } */
 ::-webkit-scrollbar {
     width: 15px;
 }
