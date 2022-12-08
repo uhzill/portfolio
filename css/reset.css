@@ -1,0 +1,42 @@
+/* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button,
+input {
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+address,
+em {
+    font-style: normal
+}
+
+a {
+    text-decoration: none
+}
+
+iframe {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0
+}

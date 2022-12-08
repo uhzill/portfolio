@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Gmarket Sans';
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot');
+}
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+
+:root {
+    --bg-color: #3144F3;
+    --color: #fff;
+}
+
+h1 {
+    font-family: 'Gmarket Sans';
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 80px;
+}
+
+a {
+    color: var(--color);
+    font-weight: 600;
+}
+
+#wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transition: all .75s;
+    /* border: 1px solid red; */
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 65vh;
+    padding: 7%;
+    top: 100vh;
+    left: 0;
+    background-color: var(--color);
+    transition: all .75s;
+    z-index: 5;
+}
+
+nav li {
+    margin-bottom: 40px;
+}
+
+nav li a {
+    font-family: 'Gmarket Sans';
+    font-size: 35px;
+    color: var(--bg-color);
+}
+
+nav li a:hover:before {
+    content: '▶ ';
+}
+
+
+.hamburgerBtn,
+.hamburgerBtn span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+}
+
+.hamburgerBtn {
+    position: fixed;
+    top: 5vw;
+    right: 5vw;
+    width: 38px;
+    height: 30px;
+}
+
+.hamburgerBtn span {
+    position: absolute;
+    width: 18px;
+    height: 5px;
+    background-color: var(--color);
+    border-radius: 4px;
+}
+
+.hamburgerBtn span:nth-of-type(1) {
+    top: 0;
+    left: 0;
+}
+
+.hamburgerBtn span:nth-of-type(2) {
+    top: 12.5px;
+    left: 10px;
+}
+
+.hamburgerBtn span:nth-of-type(3) {
+    bottom: 0;
+    right: 0;
+}
+
+.hamburgerBtn.active span:nth-of-type(1) {
+    animation: hamburger1 1s forwards;
+}
+
+.hamburgerBtn.active span:nth-of-type(2) {
+    animation: hamburger2 1s forwards;
+}
+
+.hamburgerBtn.active span:nth-of-type(3) {
+    animation: hamburger3 1s forwards;
+}
+
+
+
+@keyframes hamburger1 {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: -5px;
+    }
+
+    100% {
+        left: 10px;
+    }
+}
+
+@keyframes hamburger2 {
+    0% {
+        left: 10px;
+    }
+
+    50% {
+        left: 10px;
+    }
+
+    100% {
+        left: 10px;
+    }
+}
+
+@keyframes hamburger3 {
+    0% {
+        right: 0;
+    }
+
+    50% {
+        right: -5px;
+    }
+
+    100% {
+        right: 10px;
+    }
+}
+
+footer {
+    height: 5vh;
+    font-family: 'Gmarket Sans';
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+/* 스크롤바*/
+/* ::-webkit-scrollbar { display: none; } */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color);
+}
+
+::-webkit-scrollbar-thumb {
+    border: 3px solid var(--color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+}

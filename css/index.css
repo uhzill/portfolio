@@ -1,0 +1,40 @@
+:root {
+    --bg-color: #3144F3;
+    --color: #fff;
+}
+
+.hamburgerBtn span {
+    background-color: var(--color);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+#speechBubble {
+    width: 400px;
+    height: 70px;
+    background-image: url(../img/speech_bubble.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: var(--bg-color);
+    font-family: 'Pretendard';
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+    line-height: 55px;
+}
+
+#speechBubble span {
+    font-family: 'Pretendard';
+    font-weight: 800;
+}
