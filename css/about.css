@@ -21,7 +21,7 @@ h2 {
 
 h3 {
     font-family: 'Pretendard';
-    font-size: 20px;
+    font-size: 22px;
     line-height: 180%;
     font-weight: 600;
 }
@@ -29,9 +29,9 @@ h3 {
 li,
 p {
     font-family: 'Pretendard';
-    font-size: calc(100vw * 20 / 1920);
-    font-weight: 300;
-    line-height: 140%;
+    font-size: calc(100vw * 22 / 1920);
+    font-weight: 400;
+    line-height: 160%;
 }
 
 .aboutMe1 {
@@ -229,7 +229,7 @@ ul.left_box li {
 
 .panels__headline {
     margin: 0;
-    font-size: 30px;
+    font-size: calc(100vw * 34 / 1920);
     text-align: center;
     color: var(--color);
 }
@@ -251,20 +251,24 @@ ul.left_box li {
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 750px) {
 
     .profile_wrap img {
-        margin-right: calc(100vw * 10 / 640);
-        width: calc(100vw * 50 / 640);
+        margin-right: calc(100vw * 10 / 750);
+        width: calc(100vw * 50 / 750);
     }
 
     h3 {
-        font-size: calc(100vw * 20 / 640);
+        font-size: calc(100vw * 22 / 750);
     }
 
     li,
     p {
-        font-size: calc(100vw * 18 / 640);
+        font-size: calc(100vw * 20 / 750);
+    }
+
+    .panels__headline {
+        font-size: calc(100vw * 30 / 750);
     }
 
     .aboutMe1 {
