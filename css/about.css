@@ -42,14 +42,14 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 3px solid red;
+    margin-top: 100px;
 }
 
 .profile_box {
     width: 40%;
     height: 200px;
     margin: 20px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .profile_box h3::before {
