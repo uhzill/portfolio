@@ -154,7 +154,11 @@ nav li a:hover:before {
 }
 
 footer {
-    height: 5vh;
+    background-color: var(--bg-color);
+    color: var(--color);
+    height: 7vh;
+    margin-top: 100px;
+    padding: 2.5vh;
     font-family: 'Gmarket Sans';
     font-size: 12px;
     text-align: center;
