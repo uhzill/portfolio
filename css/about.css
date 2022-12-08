@@ -26,10 +26,12 @@ h3 {
     font-weight: 600;
 }
 
+li,
 p {
     font-family: 'Pretendard';
-    font-size: 18px;
+    font-size: calc(100vw * 20 / 1920);
     font-weight: 300;
+    line-height: 140%;
 }
 
 .aboutMe1 {
@@ -74,9 +76,6 @@ p {
 
 .profile_box ul {
     display: inline-block;
-    font-family: 'Pretendard';
-    font-size: calc(100vw * 20 / 1920);
-    line-height: 160%;
     color: #000;
 }
 
@@ -270,16 +269,9 @@ footer {
         font-size: calc(100vw * 20 / 640);
     }
 
-    .profile_box h3::before {
-        font-size: calc(100vw * 20 / 640);
-    }
-
-    .profile_box ul {
-        font-size: calc(100vw * 14 / 640);
-    }
-
-    .panels ul {
-        font-size: calc(100vw * 16 / 640);
+    li,
+    p {
+        font-size: calc(100vw * 18 / 640);
     }
 
     .aboutMe1 {
@@ -287,7 +279,7 @@ footer {
     }
 
     .profile_box {
-        width: 70%;
+        width: 90%;
     }
 
     .panels {
