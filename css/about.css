@@ -14,21 +14,21 @@ main {
 
 h2 {
     font-family: 'Gmarket Sans';
-    font-size: calc(100vw * 30 / 1920);
+    font-size: 30px;
     margin: 3vw;
     color: var(--bg-color);
 }
 
 h3 {
     font-family: 'Pretendard';
-    font-size: calc(100vw * 20 / 1920);
+    font-size: 20px;
     line-height: 180%;
     font-weight: 600;
 }
 
 p {
     font-family: 'Pretendard';
-    font-size: calc(100vw * 18 / 1920);
+    font-size: 18px;
     font-weight: 300;
 }
 
@@ -53,7 +53,7 @@ p {
 .profile_box h3::before {
     content: '● ';
     color: #FFD600;
-    font-size: calc(100vw * 18 / 1920);
+    font-size: 18px;
 }
 
 .profile_box h3 {
@@ -69,12 +69,13 @@ p {
 
 .profile_wrap img {
     margin-right: 10px;
+    width: calc(100vw * 70 / 1920);
 }
 
 .profile_box ul {
     display: inline-block;
     font-family: 'Pretendard';
-    font-size: calc(100vw * 18 / 1920);
+    font-size: calc(100vw * 20 / 1920);
     line-height: 160%;
     color: #000;
 }
@@ -103,12 +104,21 @@ p {
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+ul.left_box {
+    list-style-type: circle;
+    text-align: left;
+}
+
+ul.left_box li {
+    margin-top: 10px;
+}
+
 .right_box:nth-of-type(1) p {
     margin-bottom: 30px;
 }
 
 .right_box {
-    width: 360px;
+    width: max-content;
 }
 
 .--left,
@@ -197,6 +207,10 @@ p {
 }
 
 .--inner-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
     transform-origin: left center;
     transform: rotateY(90deg);
     transition-delay: 0.1s;
@@ -216,13 +230,13 @@ p {
 
 .panels__headline {
     margin: 0;
-    font-size: calc(100vw * 30 / 1920);
+    font-size: 30px;
     text-align: center;
     color: var(--color);
 }
 
 .panels ul {
-    font-size: calc(100vw * 16 / 1920);
+    font-size: calc(100vw * 18 / 1920);
 }
 
 .arrow {
@@ -247,8 +261,25 @@ footer {
 
 @media (max-width: 640px) {
 
+    .profile_wrap img {
+        margin-right: calc(100vw * 10 / 640);
+        width: calc(100vw * 50 / 640);
+    }
+
+    h3 {
+        font-size: calc(100vw * 20 / 640);
+    }
+
+    .profile_box h3::before {
+        font-size: calc(100vw * 20 / 640);
+    }
+
+    .profile_box ul {
+        font-size: calc(100vw * 14 / 640);
+    }
+
     .panels ul {
-        font-size: 18px;
+        font-size: calc(100vw * 16 / 640);
     }
 
     .aboutMe1 {
