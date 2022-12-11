@@ -210,3 +210,15 @@ footer {
     background-color: var(--bg-color);
     border-radius: 10px;
 }
+
+@media (max-width: 750px) {
+
+    .hamburgerBtn {
+        top: 8vw;
+        right: 8vw;
+    }
+
+    nav li a {
+        font-size: 30px;
+    }
+}

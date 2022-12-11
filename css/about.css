@@ -54,7 +54,6 @@ p {
 .profile_box {
     width: 35%;
     margin: 30px;
-    /* border: 1px solid green; */
 }
 
 .profile_box h3::before {
