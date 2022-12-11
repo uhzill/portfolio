@@ -8,6 +8,10 @@
     background-color: var(--bg-color);
 }
 
+nav li:nth-of-type(3) a {
+    color: #a3adff;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -21,6 +25,7 @@ h2 {
     font-size: 30px;
     margin: 3vw;
     color: var(--bg-color);
+    text-align: center;
 }
 
 section {
@@ -29,11 +34,8 @@ section {
     margin: 3vw;
 }
 
-section .project_list_box {
-    position: relative;
-}
-
 .project_list_box {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -44,16 +46,15 @@ section .project_list_box {
     display: flex;
     padding: 20px;
     width: 100%;
-    border-bottom: 3px solid #3144F3;
+    border-bottom: 2px solid var(--bg-color);
     font-family: 'Gmarket Sans';
     font-size: 30px;
     font-weight: 800;
-    cursor: pointer;
 }
 
 .project_list:hover {
+    background-color: var(--bg-color2);
     color: var(--color);
-    background-color: #485BFF;
 }
 
 .project_img {
@@ -64,7 +65,7 @@ section .project_list_box {
     right: -50vw;
     width: 45vw;
     color: #000;
-    box-shadow: 0px 0px 20px #6e7dff;
+    box-shadow: 0px 0px 20px var(--bg-color2);
     transition: all .5s;
 }
 
@@ -86,15 +87,16 @@ section .project_list_box {
     border: 3px solid #eee;
 }
 
-.project_text:hover~.project_img {
-    display: block;
-}
-
 .project_text {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+}
+
+.project_text:hover~.project_img {
+    display: block;
 }
 
 .project_text div:nth-child(2) {
@@ -104,37 +106,53 @@ section .project_list_box {
 }
 
 .popup_box_wrap {
+    transform: scale(0);
     position: fixed;
     top: 0;
     left: 0;
-    width: calc(100vw - 15px);
+    width: 100vw;
     height: 100vh;
-    z-index: -1;
+    backdrop-filter: blur(3px);
+    font-family: 'Gmarket Sans';
+    transition: .5s;
 }
 
 .popup_box {
-    display: none;
-}
-
-.popup_box.active {
     display: flex;
+    flex-direction: row;
     position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     width: 80vw;
+    max-height: 80vh;
     padding: 5vw;
     background-color: var(--color);
-    box-shadow: 0px 0px 1000px #6e7dff;
+    box-shadow: 0px 0px 500px #b2b9f6;
     color: #000;
 }
 
-.popup_box img {
-    width: 50%;
-    margin-right: 3vw;
+.popup_box a {
+    position: fixed;
+    top: 6vw;
+    left: 6vw;
+    background-color: var(--bg-color);
+    width: 120px;
+    padding: 15px;
+    border-radius: 100px;
+    font-size: 20px;
+    text-align: center;
 }
 
-.popup_box .popup_text_box {
+.popup_img {
+    width: 50%;
+    height: fit-content;
+    margin-right: 30px;
+}
+
+.popup_text_box {
     width: 50%;
 }
 
@@ -142,18 +160,19 @@ section .project_list_box {
     position: absolute;
     width: 5vw;
     height: 5vw;
-    top: 1vw;
-    right: 1vw;
-    font-size: 30px;
+    top: 20px;
+    right: 10px;
+    transition: .2s;
+    z-index: 5;
 }
 
-.popup_button img {
-    margin-right: 0;
+.popup_button:hover {
+    transform: rotate(180deg);
 }
 
 .popup_box h3 {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 .popup_box h3 p {
@@ -161,11 +180,12 @@ section .project_list_box {
 }
 
 .popup_box span {
-    padding: 10px 20px;
+    display: inline-block;
+    padding: 5px 10px;
     border: 2px solid #000;
     border-radius: 100px;
     font-family: 'Pretendard';
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -183,7 +203,8 @@ section .project_list_box {
 @media (max-width: 1000px) {
 
     main {
-        height: auto;
+        display: block;
+        height: 100vh;
     }
 
     section {
@@ -216,10 +237,25 @@ section .project_list_box {
         width: 100%;
     }
 
-
-    .project_list:hover {
-        display: flex;
+    .popup_box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    /* .project_list.active {} */
+    .popup_box a {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .popup_img {
+        width: 90%;
+        margin-right: 0;
+    }
+
+    .popup_box .popup_text_box {
+        width: 90%;
+        margin-top: 30px;
+    }
+
 }

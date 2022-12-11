@@ -1,19 +1,14 @@
 $(document).ready( function() {
 
-    // 프로젝트 소개
-    $(".project_list").on("click", function () {
+    // 프로젝트 소개 팝업창
+    for(let i=1; i < 4; i++){
+        $("#project_list" + i).click( function () {
+            $('#popup_' + i).css('transform','scale(1)');
+        });
 
-        $(this).find('.popup_box').addClass('active');
-        $(this).find('.popup_box_wrap').css('zIndex','0');
+        $("#pop_btn_" + i).click( function () {
+            $('#popup_' + i).css('transform','scale(0)');
+        });
+    }
 
-    });
-
-    $(".popup_button").on("click", function () {
-
-        console.log("클릭");
-        $(this).has('.popup_box').removeClass('active');
-        $(this).has('.popup_box_wrap').css('zIndex','-1');
-
-    });
-   
 });

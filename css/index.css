@@ -1,5 +1,6 @@
 :root {
     --bg-color: #3144F3;
+    --bg-color2: #485BFF;
     --color: #fff;
 }
 
@@ -10,6 +11,10 @@
 body {
     background-color: var(--bg-color);
     color: var(--color);
+}
+
+nav li:nth-of-type(1) a {
+    color: #a3adff;
 }
 
 main {

@@ -23,29 +23,62 @@ a {
     font-weight: 600;
 }
 
-#wave {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    transition: all .75s;
-}
 
 header {
     position: fixed;
+    z-index: 5;
+    width: 0;
+}
+
+#wave_blue {
     display: flex;
-    align-items: flex-end;
-    width: 100%;
-    height: 65vh;
-    padding: 7vw;
+    flex-direction: column;
+    position: relative;
     top: 100vh;
     left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+}
+
+.blue_box {
+    background-color: #485BFF;
+    width: 100%;
+    height: 100vh;
+}
+
+#wave_blue img {
+    width: 100%;
+}
+
+#wave {
+    position: absolute;
+    bottom: 79vh;
+    left: 0;
+    width: 100vw;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 80vh;
+    padding: 7vw;
+    bottom: -100vh;
+    left: 0;
     background-color: var(--color);
-    transition: all .75s;
-    z-index: 5;
+    transition: all 1s;
 }
 
 nav li {
-    margin-bottom: 40px;
+    margin-bottom: 10vh;
+}
+
+nav li:nth-last-child(1) {
+    margin-bottom: 0;
 }
 
 nav li a {
@@ -54,16 +87,8 @@ nav li a {
     color: var(--bg-color);
 }
 
-nav li a:hover:before {
-    content: '▶ ';
-}
-
-
-.hamburgerBtn,
-.hamburgerBtn span {
-    display: inline-block;
-    transition: all .4s;
-    box-sizing: border-box;
+nav li a:hover {
+    color: #FFD600;
 }
 
 .hamburgerBtn {
@@ -75,6 +100,8 @@ nav li a:hover:before {
 }
 
 .hamburgerBtn span {
+    display: inline-block;
+    transition: all .4s;
     position: absolute;
     width: 18px;
     height: 5px;
@@ -99,14 +126,17 @@ nav li a:hover:before {
 
 .hamburgerBtn.active span:nth-of-type(1) {
     animation: hamburger1 1s forwards;
+    animation-delay: .1s;
 }
 
 .hamburgerBtn.active span:nth-of-type(2) {
     animation: hamburger2 1s forwards;
+    animation-delay: .1s;
 }
 
 .hamburgerBtn.active span:nth-of-type(3) {
     animation: hamburger3 1s forwards;
+    animation-delay: .1s;
 }
 
 

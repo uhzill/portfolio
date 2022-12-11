@@ -8,6 +8,10 @@
     background-color: var(--bg-color);
 }
 
+nav li:nth-of-type(2) a {
+    color: #a3adff;
+}
+
 main {
     color: var(--color);
 }
@@ -17,6 +21,7 @@ h2 {
     font-size: 30px;
     margin: 3vw;
     color: var(--bg-color);
+    text-align: center;
 }
 
 h3 {
@@ -47,7 +52,7 @@ p {
 }
 
 .profile_box {
-    width: 40%;
+    width: 35%;
     margin: 30px;
     /* border: 1px solid green; */
 }
@@ -64,6 +69,11 @@ p {
     font-weight: 700;
 }
 
+.profile_box ul {
+    display: inline-block;
+    color: #000;
+}
+
 .profile_wrap {
     display: flex;
     margin-left: 30px;
@@ -72,11 +82,6 @@ p {
 .profile_wrap img {
     margin-right: 10px;
     width: calc(100vw * 70 / 1920);
-}
-
-.profile_box ul {
-    display: inline-block;
-    color: #000;
 }
 
 .profile_item {
@@ -243,15 +248,102 @@ ul.left_box li {
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;
+    width: calc(100vw * 50 / 1920);
+    height: calc(100vw * 50 / 1920);
     fill: var(--color);
-    border: 3px solid var(--color);
+    border: calc(100vw * 3 / 1920) solid var(--color);
     border-radius: 50%;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.contact {
+    margin-top: 200px;
+}
+
+.contact_wrap {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.contact_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 40%;
+    margin-right: 50px;
+}
+
+.contact_box {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    font-family: 'Gmarket Sans';
+    font-size: 18px;
+    font-weight: 800;
+    color: #000;
+    cursor: pointer;
+}
+
+.contact_box div {
+    width: 100px;
+}
+
+.contact_box a {
+    font-size: 18px;
+    font-family: 'Pretendard';
+    font-weight: 600;
+    color: #000;
+}
+
+.contact_box a:hover {
+    color: #3144F3;
+}
+
+.contact_box:nth-last-of-type(1) {
+    margin-top: 100px;
+}
+
+.contact_box:nth-last-of-type(1) p {
+    color: var(--bg-color);
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.contact_img {
+    width: 20%;
+    height: fit-content;
+}
+
+
 @media (max-width: 750px) {
+    .profile_box h3 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .profile_box h3::after {
+        content: ' ●';
+        color: #FFD600;
+        font-size: 18px;
+    }
+
+    .profile_wrap {
+        margin-left: 0;
+        justify-content: center;
+        padding-bottom: 100px;
+        border-bottom: 1px solid var(--bg-color);
+    }
+
+    .profile_item {
+        width: 22%;
+    }
+
+    .profile_text {
+        width: 55%;
+    }
 
     .profile_wrap img {
         margin-right: calc(100vw * 10 / 750);
@@ -296,6 +388,12 @@ ul.left_box li {
     .--right {
         top: -25%;
         left: 0;
+    }
+
+    .arrow {
+        width: calc(100vw * 40 / 750);
+        height: calc(100vw * 40 / 750);
+        border: calc(100vw * 3 / 750) solid var(--color);
     }
 
     .--left:hover .arrow {
@@ -366,4 +464,37 @@ ul.left_box li {
         top: 25%;
     }
 
+    .contact_wrap {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact .contact_list {
+        margin-right: 0;
+    }
+
+    .contact_list {
+        width: 50%;
+    }
+
+    .contact_box {
+        justify-content: space-between;
+    }
+
+    .contact_box:nth-last-of-type(1) {
+        justify-content: center;
+    }
+
+    .contact_box a {
+        font-size: calc(100vw * 20 / 750);
+    }
+
+    .contact_box:nth-last-of-type(1) p {
+        text-align: center;
+    }
+
+    .contact_img {
+        width: 50%;
+        margin-top: 50px;
+    }
 }

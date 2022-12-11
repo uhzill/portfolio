@@ -17,18 +17,21 @@
 
 <body>
     <header>
-        <img id="wave" src="./img/wave.svg" alt="웨이브">
+        <div id="wave_blue">
+            <img src="./img/wave_blue.svg" alt="웨이브">
+            <div class="blue_box"></div>
+        </div>   
+        <a id="menu" class="hamburgerBtn" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
         <nav>
-            <a id="menu" class="hamburgerBtn" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
+            <img id="wave" src="./img/wave.svg" alt="웨이브">
             <ul id="gnbMenu">
                 <li><a href="./index.html">MAIN</a></li>
                 <li><a href="./about.html">ABOUT ME</a></li>
                 <li><a href="./work.html">WORKS</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +40,7 @@
         <h2>WORKS</h2>
         <section>
             <ul class="project_list_box">
-                <li class="project_list">
+                <li id="project_list1" class="project_list">
                     <div class="project_text">                    
                         <div>ZZAN!</div>
                         <div>앱서비스 홍보 웹페이지</div>
@@ -47,24 +50,8 @@
                         <p>#팀프로젝트  #css animation</p>
                         <img src="./img/project_img1.png" alt="ZZAN!">
                     </div>
-                    <div class="popup_box_wrap">
-                        <div class="popup_box">
-                            <img src="https://www.dummyimage.com/500x500/000/fff" alt="ZZAN!">
-                            <div class="popup_text_box">
-                                <button class="popup_button"><img src="./img/close_btn.svg" alt="닫기"></button>
-                                <h3>
-                                    앱서비스 홍보 웹페이지
-                                    <p>ZZAN!</p> 
-                                </h3>
-                                <span>#팀프로젝트</span> <span>#css animation</span>
-                                <p class="popup_text">공모전 제출을 위해 팀으로 진행한 프로젝트 입니다. 주류 취향을 찾고 술자리 분위기를 즐길 수 있도록 도와주는 앱 서비스 입니다. 저는 앱 소개 웹 페이지 디자인과 퍼블리싱을 담당했습니다. 앱 디자인과 분위기에 맞춰 제이쿼리와 css 애니메이션을 사용하여 통통튀는 움직임을 넣어 제작했습니다. </p>
-
-                                <p class="popup_text">어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 </p>
-                            </div>
-                        </div>
-                    </div>
                 </li>
-                <li class="project_list">
+                <li id="project_list2" class="project_list">
                     <div class="project_text"> 
                         <div>RE:O</div>
                         <div>영상 소개 웹페이지</div>
@@ -74,23 +61,8 @@
                         <p>#가로스크롤 #???</p>
                         <img src="./img/project_img2.png" alt="RE:O">
                     </div>
-                    <div class="popup_box_wrap">
-                        <div class="popup_box">
-                            <img src="https://www.dummyimage.com/500x500/000/fff" alt="ZZAN!">
-                            <div class="popup_text_box">
-                                <button class="popup_button"><img src="./img/close_btn.svg" alt="닫기"></button>
-                                <h3>
-                                    영상 소개 웹페이지
-                                    <p>RE:O</p> 
-                                </h3>
-                                <span>#팀프로젝트</span> <span>#가로스크롤</span>
-                                <p class="popup_text">가로스크롤로 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고</p>
-                                <p class="popup_text">어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 </p>
-                            </div>
-                        </div>
-                    </div>
                 </li>
-                <li class="project_list">
+                <li id="project_list3" class="project_list">
                     <div class="project_text"> 
                         <div>MBTI TEST</div>
                         <div>React 웹서비스</div>
@@ -100,19 +72,45 @@
                         <p>#React  #???</p>
                         <img src="https://www.dummyimage.com/600x300/000/fff" alt="MBTI TEST">
                     </div>
-                    <div class="popup_box_wrap">
-                        <div class="popup_box">
-                            <img src="https://www.dummyimage.com/500x500/000/fff" alt="ZZAN!">
-                            <div class="popup_text_box">
-                                <button class="popup_button"><img src="./img/close_btn.svg" alt="닫기"></button>
-                                <h3>
-                                    React 웹서비스
-                                    <p>MBTI TEST</p> 
-                                </h3>
-                                <span>#React</span> <span>#???</span>
-                                <p class="popup_text">리액트를 사용하여 제작한 MBTI 테스트 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고</p>
-                                <p class="popup_text">어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 </p>
-                            </div>
+                </li>
+            </ul>
+            <ul>
+                <li id="popup_1" class="popup_box_wrap">
+                    <div class="popup_box">
+                        <button id="pop_btn_1" class="popup_button"><img src="./img/close_btn.svg" alt="닫기"></button>
+                        <a href="https://uhzill.github.io/ZZAN/" target=”_blank”>WEB</a>
+                        <img class="popup_img" src="https://www.dummyimage.com/500x500/000/fff" alt="ZZAN!">
+                        <div class="popup_text_box">
+                            <h3>앱서비스 홍보 웹페이지<p>ZZAN!</p></h3>
+                            <span>#팀프로젝트</span> <span>#css animation</span>
+                            <p class="popup_text">공모전 제출을 위해 팀으로 진행한 프로젝트 입니다. 주류 취향을 찾고 술자리 분위기를 즐길 수 있도록 도와주는 앱 서비스 입니다. 저는 앱 소개 웹 페이지 디자인과 퍼블리싱을 담당했습니다. 앱 디자인과 분위기에 맞춰 제이쿼리와 css 애니메이션을 사용하여 통통튀는 움직임을 넣어 제작했습니다. </p>
+                            <p class="popup_text">어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 </p>
+                        </div>
+                    </div>
+                </li>
+                <li id="popup_2" class="popup_box_wrap">
+                    <div class="popup_box">
+                        <button id="pop_btn_2" class="popup_button"><img src="./img/close_btn.svg" alt="닫기"></button>
+                        <a href="https://re-o.netlify.app/" target=”_blank”>WEB</a>
+                        <img class="popup_img" src="https://www.dummyimage.com/500x500/000/fff" alt="RE:O">
+                        <div class="popup_text_box">
+                            <h3>영상 소개 웹페이지 <p>RE:O</p></h3>
+                            <span>#팀프로젝트</span> <span>#가로스크롤</span>
+                            <p class="popup_text">가로스크롤로 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고</p>
+                            <p class="popup_text">어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 </p>
+                        </div>
+                    </div>
+                </li>
+                <li id="popup_3" class="popup_box_wrap">
+                    <div id="pop_btn_3" class="popup_box">
+                        <button class="popup_button"><img src="./img/close_btn.svg" alt="닫기"></button>
+                        <a href="https://re-o.netlify.app/" target=”_blank”>WEB</a>
+                        <img class="popup_img" src="https://www.dummyimage.com/500x400/000/fff" alt="MBTI TEST">
+                        <div class="popup_text_box">
+                            <h3> React 웹서비스<p>MBTI TEST</p> </h3>
+                            <span>#React</span> <span>#???</span>
+                            <p class="popup_text">리액트를 사용하여 제작한 MBTI 테스트 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고</p>
+                            <p class="popup_text">어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 </p>
                         </div>
                     </div>
                 </li>
