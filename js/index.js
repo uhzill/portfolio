@@ -5,9 +5,8 @@ $(document).ready( function() {
         perturbance: 0.5, // 잔물경 굴절 강도. 0은 굴절 없음
     });
 
-
     $(".water_drop").click( function () {
-        $('').toggleClass('active');
+        $('#scene').toggleClass('active');
     });
 
 });

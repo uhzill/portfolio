@@ -11,6 +11,7 @@
     --color: #fff;
 }
 
+
 h1 {
     font-family: 'Gmarket Sans';
     font-weight: 400;
@@ -194,6 +195,10 @@ footer {
     text-align: center;
 }
 
+::selection {
+    background: var(--bg-color);
+    color: var(--color);
+}
 
 
 /* 스크롤바*/

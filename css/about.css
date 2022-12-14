@@ -10,6 +10,7 @@
 
 nav li:nth-of-type(2) a {
     color: #a3adff;
+    text-decoration: line-through;
 }
 
 main {
@@ -122,6 +123,7 @@ ul.left_box li {
 
 .right_box {
     width: max-content;
+    text-align: center;
 }
 
 .--left,

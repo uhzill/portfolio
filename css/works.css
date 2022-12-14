@@ -10,6 +10,7 @@
 
 nav li:nth-of-type(3) a {
     color: #a3adff;
+    text-decoration: line-through;
 }
 
 main {
@@ -28,10 +29,20 @@ h2 {
     text-align: center;
 }
 
+#wrap {
+    display: flex;
+}
+
 section {
     display: flex;
     justify-content: flex-start;
     margin: 3vw;
+    border: 1px solid red;
+    width: 45%;
+}
+
+.right_section {
+    height: 50vh;
 }
 
 .project_list_box {
@@ -39,7 +50,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 45%;
+    width: 100%;
 }
 
 .project_list {
@@ -74,11 +85,16 @@ section {
     margin: 10px 0;
 }
 
-.project_img p {
+.project_img span {
+    display: inline-block;
     font-family: 'Pretendard';
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
+    padding: 5px 10px;
+    border: 2px solid var(--bg-color2);
+    color: var(--bg-color2);
+    border-radius: 100px;
 }
 
 .project_img img {
@@ -134,22 +150,34 @@ section {
     color: #000;
 }
 
-.popup_box a {
-    position: fixed;
-    top: 6vw;
-    left: 6vw;
-    background-color: var(--bg-color);
-    width: 120px;
-    padding: 15px;
+.popup_box .web_btn {
+    position: absolute;
+    margin: 1vw;
+    width: calc(100vw * 120 / 1920);
+    padding: calc(100vw * 15 / 1920);
+    ;
     border-radius: 100px;
-    font-size: 20px;
     text-align: center;
+    color: var(--color);
+    background-color: var(--bg-color);
+    font-family: 'Gmarket Sans';
+    font-size: calc(100vw * 24 / 1920);
+    font-weight: 600;
+}
+
+.popup_box a {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.popup_box a:hover {
+    filter: opacity(.7);
+    transition: .5s;
 }
 
 .popup_img {
-    width: 50%;
+    width: 100%;
     height: fit-content;
-    margin-right: 30px;
 }
 
 .popup_text_box {
@@ -243,9 +271,21 @@ section {
         text-align: center;
     }
 
+    .popup_box .web_btn {
+        top: 7vw;
+        left: 10vw;
+        width: calc(100vw * 120 / 1000);
+        padding: calc(100vw * 15 / 1000);
+        font-size: calc(100vw * 24 / 1000);
+    }
+
     .popup_box a {
-        position: static;
-        margin-bottom: 10px;
+        width: 100%;
+        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
     }
 
     .popup_img {
