@@ -42,13 +42,24 @@ section {
 }
 
 .right_section {
-    height: 50vh;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.right_section p {
+    display: inline-block;
+    font-family: 'Pretendard';
+    font-size: 50px;
+    font-weight: 600;
+    text-align: right;
 }
 
 .project_list_box {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: flex-end;
     width: 100%;
 }
@@ -81,7 +92,7 @@ section {
 }
 
 .project_img h3 {
-    font-size: 30px;
+    font-size: calc(100vw * 30 / 1920);
     margin: 10px 0;
 }
 
@@ -95,6 +106,7 @@ section {
     border: 2px solid var(--bg-color2);
     color: var(--bg-color2);
     border-radius: 100px;
+    margin: 5px;
 }
 
 .project_img img {
@@ -232,10 +244,15 @@ section {
 
     main {
         display: block;
-        height: 100vh;
+        height: 200vh;
+    }
+
+    #wrap {
+        flex-direction: column-reverse;
     }
 
     section {
+        width: 90vw;
         flex-direction: column;
         align-items: center;
     }
@@ -263,6 +280,10 @@ section {
 
     .project_img img {
         width: 100%;
+    }
+
+    .project_img h3 {
+        font-size: calc(100vw * 30 / 750);
     }
 
     .popup_box {
