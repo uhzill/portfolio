@@ -31,28 +31,43 @@ h2 {
 
 #wrap {
     display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
 }
 
 section {
-    display: flex;
-    justify-content: flex-start;
-    margin: 3vw;
-    border: 1px solid red;
     width: 45%;
 }
 
 .right_section {
-    height: 70vh;
-    flex-direction: column;
-    justify-content: flex-end;
+    position: relative;
+    font-family: 'Pretendard';
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 110px;
+    text-align: right;
+    color: var(--bg-color2);
 }
 
-.right_section p {
-    display: inline-block;
-    font-family: 'Pretendard';
-    font-size: 50px;
-    font-weight: 600;
-    text-align: right;
+.container {
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    outline: 2px transparent;
+}
+
+.right_section ul {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.right_section .line_text {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--bg-color2);
 }
 
 .project_list_box {
@@ -89,6 +104,7 @@ section {
     color: #000;
     box-shadow: 0px 0px 20px var(--bg-color2);
     transition: all .5s;
+    background: #fff;
 }
 
 .project_img h3 {
@@ -99,14 +115,14 @@ section {
 .project_img span {
     display: inline-block;
     font-family: 'Pretendard';
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 20px;
     padding: 5px 10px;
     border: 2px solid var(--bg-color2);
     color: var(--bg-color2);
     border-radius: 100px;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 .project_img img {
@@ -167,7 +183,6 @@ section {
     margin: 1vw;
     width: calc(100vw * 120 / 1920);
     padding: calc(100vw * 15 / 1920);
-    ;
     border-radius: 100px;
     text-align: center;
     color: var(--color);
@@ -248,19 +263,21 @@ section {
     }
 
     #wrap {
-        flex-direction: column-reverse;
-    }
-
-    section {
-        width: 90vw;
         flex-direction: column;
         align-items: center;
     }
 
-    .project_list_box {
-        margin-top: 50px;
-        width: 90%;
+    section {
+        width: 90vw;
     }
+
+
+
+
+    .right_section {
+        text-align: center;
+    }
+
 
     .project_list {
         height: auto;
@@ -293,11 +310,10 @@ section {
     }
 
     .popup_box .web_btn {
-        top: 7vw;
-        left: 10vw;
         width: calc(100vw * 120 / 1000);
         padding: calc(100vw * 15 / 1000);
         font-size: calc(100vw * 24 / 1000);
+        margin: 2vw;
     }
 
     .popup_box a {

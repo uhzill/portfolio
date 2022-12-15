@@ -13,4 +13,22 @@ $(document).ready( function() {
         });
     }
 
+
+    // 텍스트 오버 모션
+    const container = document.querySelector(".container");
+
+    document.body.addEventListener("mousemove", e => {
+        const y = e.clientY;
+        const top = $(".right_section").position().top;
+
+        const lineText = y - top - 50 ;
+
+        gsap.to(container, {
+            y: lineText
+        });
+        gsap.to(".mask", {
+            y: -lineText
+        });
+    });
+
 });

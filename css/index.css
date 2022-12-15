@@ -164,7 +164,7 @@ h1 {
 
 #scene {
     position: fixed;
-    top: 0;
+    top: 100vh;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -173,7 +173,7 @@ h1 {
 }
 
 #scene.active {
-    top: 100vh;
+    top: 0;
 }
 
 .layer {

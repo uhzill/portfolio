@@ -11,6 +11,7 @@
     <link rel="icon" href="./img/favicon.ico" sizes="32x32">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
     <script src="./js/header.js"></script>
     <script src="./js/works.js"></script>
 
@@ -91,7 +92,34 @@
                         <div class="popup_text_box">
                             <h3>앱서비스 홍보 웹페이지<p>ZZAN!</p></h3>
                             <span>#TEAM_PROJECT</span> <span>#CSS_ANIMATION</span>
-                            <p class="popup_text">공모전 제출을 위해 팀으로 진행한 프로젝트 입니다. 주류 취향을 찾고 술자리 분위기를 즐길 수 있도록 도와주는 앱 서비스 입니다. 저는 앱 소개 웹 페이지 디자인과 퍼블리싱을 담당했습니다. 앱 디자인과 분위기에 맞춰 제이쿼리와 css 애니메이션을 사용하여 통통튀는 애니메이션을 넣어 제작한 원스크롤 페이지입니다. 상단의 메뉴를 누르면 해당위치로 스크롤 이동할 수 있도록 했습니다. </p>
+                            <p class="popup_text">공모전 제출을 위해 팀으로 진행한 프로젝트 입니다. 주류 취향을 찾고 술자리 분위기를 즐길 수 있도록 도와주는 앱 서비스 입니다. 저는 앱 소개 웹 페이지 디자인과 퍼블리싱을 담당했습니다. 앱 디자인과 분위기에 맞춰 제이쿼리와 css 애니메이션을 사용하여 통통튀는 애니메이션을 넣어 제작한 원스크롤 페이지입니다. 상단의 메뉴를 누르면 해당위치로 스크롤 이동할 수 있도록 했습니다. <br>
+
+                            로딩 화면은 윈도우가 로드되면 페이드 아웃되는 방식으로 제작했고 로딩 이미지는 css step 애니메이션을 사용했습니다
+
+                            스크롤하면 픽스된 섹션에 clip-path를 원모양으로 하여 
+                            스크롤한 값만큼 원 모양이 커지도록 했습니다
+
+                            모든 섹션을 viewport height 100으로 하여
+                            몇번째 섹션에 위치하고 있는지 알 수 있게 하였고
+                            이 부분은 스크롤 위치가 화면크기의 3배 정도가 되면
+                            addClass되도록 하여 모션을 주었고 
+                            디자인섹션의 타이포와 로고 부분도 동일한 방법을 사용하였습니다
+
+                            키워드는 마우스 오버 유도를 위해 css로 키프레임 애니메이션을 사용해 모션을 주었고
+                            마우스 오버하면 뒤에 숨어있던 키워드들을 transform 속성으로 위치 이동시켜 보여지도록 했습니다
+
+                            컬러도 마찬가지로 css로 키프레임 애니메이션을 사용해 마우스 오버 모션을 주었습니다
+                            (처음에는 컬러 오버 시에 점프를 높게 하도록 했었는데
+                            그렇게 하면 마우스 영역밖으로 벗어나게 되어 모션이 불안정하게 보여서 
+                            점프 높이를 낮추는 방법으로 수정했습니다)
+
+                            아이콘도 마우스 오버 시에 컬러 변경되며 스케일이 커지도록 했고
+
+                            서비스 소개 부분은 
+                            Scroll Magic 라이브러리를 사용하여 
+                            서비스 섹션이 화면 상단에 닿으면 포지션 픽스되고
+                            요소들이 화면 밖에서 들어오도록 모션을 주었습니다
+                            </p>
                             <p class="popup_text">어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 </p>
                         </div>
                     </div>
@@ -129,8 +157,20 @@
             </ul>
         </section>
         <section class="right_section">
-            <p>아 뭐써</p>
-            <p>아 뭐써</p>
+            <ul class="line_text"> 
+                <li>잔잔하게</li>
+                <li>단단하게</li>
+                <li>성장중인</li>
+                <li>퍼블리셔</li>           
+            </ul>
+            <div class="container">
+              <ul class="mask">
+                <li>잔잔하게</li>
+                <li>단단하게</li>
+                <li>성장중인</li>
+                <li>퍼블리셔</li>         
+            </ul>
+            </div>
         </section>
     </div>
     </main>
