@@ -87,40 +87,28 @@
                         <button id="pop_btn_1" class="popup_button"><img src="./img/close_btn.svg" alt="닫기"></button>
                         <a href="https://uhzill.github.io/ZZAN/" target=”_blank”> 
                             <button class="web_btn">WEB</button>
-                            <img class="popup_img" src="https://www.dummyimage.com/500x400/000/fff" alt="ZZAN!">
+                            <img class="popup_img" src="./img/project_popup_img1.png" alt="ZZAN!">
+                            <img class="popup_img" src="./img/main.gif" alt="ZZAN!">
+                            <img class="popup_img" src="./img/keyword.gif" alt="ZZAN!">
+                            <img class="popup_img" src="./img/service.gif" alt="ZZAN!">
                         </a>
                         <div class="popup_text_box">
                             <h3>앱서비스 홍보 웹페이지<p>ZZAN!</p></h3>
                             <span>#TEAM_PROJECT</span> <span>#CSS_ANIMATION</span>
-                            <p class="popup_text">공모전 제출을 위해 팀으로 진행한 프로젝트 입니다. 주류 취향을 찾고 술자리 분위기를 즐길 수 있도록 도와주는 앱 서비스 입니다. 저는 앱 소개 웹 페이지 디자인과 퍼블리싱을 담당했습니다. 앱 디자인과 분위기에 맞춰 제이쿼리와 css 애니메이션을 사용하여 통통튀는 애니메이션을 넣어 제작한 원스크롤 페이지입니다. 상단의 메뉴를 누르면 해당위치로 스크롤 이동할 수 있도록 했습니다. <br>
+                            <p class="popup_text">공모전 제출을 위해 팀으로 진행한 프로젝트 입니다. 주류 취향을 찾고 술자리 분위기를 즐길 수 있도록 도와주는 앱 서비스 입니다. 저는 팀에서 웹 페이지 디자인과 퍼블리싱을 담당했습니다.
+                                
+                            앱 디자인과 분위기에 맞춰 제이쿼리와 css 애니메이션을 사용하여 통통튀는 모션을 넣어 원스크롤로 제작했습니다.
 
-                            로딩 화면은 윈도우가 로드되면 페이드 아웃되는 방식으로 제작했고 로딩 이미지는 css step 애니메이션을 사용했습니다
+                            로딩 화면은 윈도우가 로드 되면 페이드 아웃되는 방식으로, 로딩 이미지는 css step 애니메이션을 사용하여 만들었습니다. 메인화면에서 스크롤하면 픽스되어 있는 섹션을 원 모양으로 clip-path를 사용하여 스크롤한 값만큼 원 모양이 커지도록 하여 섹션이 보여지며 시작되도록 했습니다.
 
-                            스크롤하면 픽스된 섹션에 clip-path를 원모양으로 하여 
-                            스크롤한 값만큼 원 모양이 커지도록 했습니다
+                            모든 섹션의 height를 100vh로 하여 몇번째 섹션에 위치하고 있는지 알 수 있게 하여, 화면크기의 n배 위치했을 때 addClass되도록 하여 모션을 주었습니다.
 
-                            모든 섹션을 viewport height 100으로 하여
-                            몇번째 섹션에 위치하고 있는지 알 수 있게 하였고
-                            이 부분은 스크롤 위치가 화면크기의 3배 정도가 되면
-                            addClass되도록 하여 모션을 주었고 
-                            디자인섹션의 타이포와 로고 부분도 동일한 방법을 사용하였습니다
+                            키워드 부분은 마우스 오버 유도를 위해 css로 키프레임 애니메이션을 사용해 모션을 주었고, 마우스 오버하면 뒤에 숨어있던 키워드들을 transform 속성으로 위치 이동시켜 보여지도록 했습니다.
 
-                            키워드는 마우스 오버 유도를 위해 css로 키프레임 애니메이션을 사용해 모션을 주었고
-                            마우스 오버하면 뒤에 숨어있던 키워드들을 transform 속성으로 위치 이동시켜 보여지도록 했습니다
+                            서비스 소개 부분은 Scroll Magic 라이브러리를 사용하여 서비스 섹션이 화면 상단에 닿으면 포지션이 고정되고 요소들이 화면 밖에서 들어오도록 모션을 주었습니다.
 
-                            컬러도 마찬가지로 css로 키프레임 애니메이션을 사용해 마우스 오버 모션을 주었습니다
-                            (처음에는 컬러 오버 시에 점프를 높게 하도록 했었는데
-                            그렇게 하면 마우스 영역밖으로 벗어나게 되어 모션이 불안정하게 보여서 
-                            점프 높이를 낮추는 방법으로 수정했습니다)
 
-                            아이콘도 마우스 오버 시에 컬러 변경되며 스케일이 커지도록 했고
-
-                            서비스 소개 부분은 
-                            Scroll Magic 라이브러리를 사용하여 
-                            서비스 섹션이 화면 상단에 닿으면 포지션 픽스되고
-                            요소들이 화면 밖에서 들어오도록 모션을 주었습니다
                             </p>
-                            <p class="popup_text">어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 </p>
                         </div>
                     </div>
                 </li>
@@ -129,13 +117,22 @@
                         <button id="pop_btn_2" class="popup_button"><img src="./img/close_btn.svg" alt="닫기"></button>
                         <a href="https://re-o.netlify.app/" target=”_blank”>
                             <button class="web_btn">WEB</button>
-                            <img class="popup_img" src="https://www.dummyimage.com/500x400/000/fff" alt="RE:O">
+                            <img class="popup_img" src="./img/project_popup_img2.png" alt="RE:O">
+                            <img class="popup_img" src="./img/project_popup_img2.jpg" alt="RE:O">
                         </a>
                         <div class="popup_text_box">
                             <h3>영상 소개 웹페이지 <p>RE:O</p></h3>
-                            <span>#TEAM_PROJECT</span> <span>#가로스크롤</span>
-                            <p class="popup_text">가로스크롤로 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고</p>
-                            <p class="popup_text">어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 </p>
+                            <span>#TEAM_PROJECT</span> <span>#가로스크롤</span> <span>#학과우수작</span>
+                            <p class="popup_text"> 졸업 작품으로 팀과 함께 영상을 만들었고, 그 영상을 소개하는 웹페이지를 작업하였습니다. 
+                                
+                            영상 작업은 디자인 담당 2명과 프로그래밍 담당인 제가 함께 팀을 이루어 진행했습니다. 저는 팀에서 2D 모션그래픽, 웹디자인, 퍼블리싱을 담당하여 작업했습니다. 
+                            
+                            웹페이지는 영상 전시를 보는 듯한 느낌이 들도록 디자인 했고 어두운 배경 색상으로 몰입감을 높였으며 가로스크롤을 사용했습니다. 가로스크롤은 제이쿼리로 scrollLeft 값을 빼기 할당 연산자로 조절하여 if문으로 스크롤 올릴 때 와 내릴 때를 나누어 작성하여 좌우로 움직여 볼 수 있도록 했습니다.
+
+                            이번 협업을 통해 의사소통의 중요성에 대해 알 수 있었고, 디자이너 분들과 어떤 방식으로 협업하는지 알 수 있었습니다. 또한, 퍼블리싱 작업을 하며 문제를 해결하는 것에 익숙해질 수 있었던 시간이었습니다.
+                        
+                        
+                        </p>
                         </div>
                     </div>
                 </li>
@@ -144,13 +141,18 @@
                         <button class="popup_button"><img src="./img/close_btn.svg" alt="닫기"></button>
                         <a href="https://orchestra-mbti.netlify.app/" target=”_blank”>
                             <button class="web_btn">WEB</button>
-                            <img class="popup_img" src="https://www.dummyimage.com/500x400/000/fff" alt="MBTI TEST">
+                            <img class="popup_img" src="./img/project_popup_img3.png" alt="MBTI TEST">
                         </a>
                         <div class="popup_text_box">
                             <h3> React 웹서비스<p>MBTI TEST</p> </h3>
                             <span>#React</span> <span>#Bootstrap</span>
-                            <p class="popup_text">리액트를 사용하여 제작한 MBTI 테스트 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고</p>
-                            <p class="popup_text">어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 </p>
+                            <p class="popup_text">리액트를 공부하며 제작한 MBTI 테스트 입니다.
+                                오케스트라 MBTI TEST를 주제로 기획하여 3개의 페이지(Home, Question ,Result)를 만들었고, 홈화면에서 테스트 시작 버튼을 클릭하면 Question 페이지로 넘어가며 12개의 질문에 대한 답을 모두 선택하면 Result 페이지로 넘어갑니다.
+                                
+                                이 프로젝트를 통해 Virtual DOM과 State, Component에 대해 알 수 있었고, 형상관리도구 Git의 사용법도 함께 습득할 수 있었습니다.
+
+
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -164,12 +166,12 @@
                 <li>퍼블리셔</li>           
             </ul>
             <div class="container">
-              <ul class="mask">
-                <li>잔잔하게</li>
-                <li>단단하게</li>
-                <li>성장중인</li>
-                <li>퍼블리셔</li>         
-            </ul>
+                <ul class="mask">
+                    <li>잔잔하게</li>
+                    <li>단단하게</li>
+                    <li>성장중인</li>
+                    <li>퍼블리셔</li>         
+                </ul>
             </div>
         </section>
     </div>

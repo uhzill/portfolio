@@ -32,4 +32,22 @@ $(document).ready( function() {
     }());
         
     Panels.init();
+
+
+
+for(var i = 1; i < 6; i++){
+    $('.profile_img1 .hover' + i ).mouseover(function(){
+
+        $('.profile_img_hover1 .hover' + i ).fadeIn();
+        console.log("나옴");
+
+    });
+    $('.profile_img1 .hover' + i ).mouseout(function(){
+
+        $('.profile_img_hover1 .hover' + i ).fadeOut();
+        console.log("사라짐");
+
+    });
+}
+
 });

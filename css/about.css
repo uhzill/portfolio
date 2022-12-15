@@ -36,7 +36,7 @@ li,
 p {
     font-family: 'Pretendard';
     font-size: calc(100vw * 22 / 1920);
-    font-weight: 400;
+    font-weight: 500;
     line-height: 160%;
 }
 
@@ -50,47 +50,6 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 100px;
-}
-
-.profile_box {
-    width: 35%;
-    margin: 30px;
-}
-
-.profile_box h3::before {
-    content: '● ';
-    color: #FFD600;
-    font-size: 18px;
-}
-
-.profile_box h3 {
-    margin: 10px;
-    color: #000;
-    font-weight: 700;
-}
-
-.profile_box ul {
-    display: inline-block;
-    color: #000;
-}
-
-.profile_wrap {
-    display: flex;
-    margin-left: 30px;
-}
-
-.profile_wrap img {
-    margin-right: 10px;
-    width: calc(100vw * 70 / 1920);
-}
-
-.profile_item {
-    width: 25%;
-}
-
-.profile_text {
-    width: 65%;
-    /* border: 1px solid green; */
 }
 
 .panels {
@@ -257,6 +216,72 @@ ul.left_box li {
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.profile_box {
+    width: 35%;
+    margin: 30px;
+}
+
+.profile_box h3::before {
+    content: '● ';
+    color: #FFD600;
+    font-size: 18px;
+}
+
+.profile_box h3 {
+    margin: 10px;
+    color: #000;
+    font-weight: 700;
+}
+
+.profile_box ul {
+    display: block;
+    color: #000;
+}
+
+.profile_wrap {
+    display: flex;
+    margin-left: 30px;
+}
+
+.profile_box img {
+    margin: calc(100vw * 5 / 1920);
+    width: calc(100vw * 60 / 1920);
+}
+
+.profile_item {
+    width: 25%;
+}
+
+.profile_text {
+    width: 65%;
+}
+
+.profile_img {
+    margin-left: 30px;
+}
+
+.profile_img li {
+    display: inline;
+}
+
+/* .profile_img_hover {
+    margin-left: 30px;
+}
+
+.profile_img_hover li {
+    display: none;
+    position: absolute;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #a4adff;
+    width: 35%;
+    white-space: pre-line;
+    font-weight: 500;
+} */
+
+
 .contact {
     margin-top: 200px;
 }
@@ -285,6 +310,7 @@ ul.left_box li {
     font-weight: 800;
     color: #000;
     cursor: pointer;
+    white-space: pre-line;
 }
 
 .contact_box div {
@@ -346,8 +372,8 @@ ul.left_box li {
         width: 55%;
     }
 
-    .profile_wrap img {
-        margin-right: calc(100vw * 10 / 750);
+    .profile_box img {
+        margin: calc(100vw * 5 / 750);
         width: calc(100vw * 50 / 750);
     }
 
@@ -463,6 +489,14 @@ ul.left_box li {
 
     .arrow--left {
         top: 25%;
+    }
+
+    .profile_box .profile_img {
+        text-align: center;
+    }
+
+    .profile_img_hover li {
+        width: 80%;
     }
 
     .contact_wrap {
