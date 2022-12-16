@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Gmarket Sans';
-    src: url('./font/GmarketSansTTFBold.otf');
+    src: url('./font/GmarketSansBold.otf');
+    font-style: normal;
 }
 
 @font-face {
