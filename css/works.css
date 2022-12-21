@@ -22,7 +22,7 @@ main {
 }
 
 h2 {
-    font-family: 'Gmarket Sans';
+    font-family: 'Gmarket Sans Bold';
     font-size: 30px;
     margin: 3vw;
     color: var(--bg-color);
@@ -86,7 +86,7 @@ section {
     padding: 20px;
     width: 100%;
     border-bottom: 2px solid var(--bg-color);
-    font-family: 'Gmarket Sans';
+    font-family: 'Gmarket Sans Bold';
     font-size: 30px;
     font-weight: 800;
 }
@@ -159,7 +159,7 @@ section {
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(3px);
-    font-family: 'Gmarket Sans';
+    font-family: 'Gmarket Sans Bold';
     transition: .5s;
 }
 
@@ -281,10 +281,14 @@ section {
         display: none;
     }
 
-
     .project_list {
+        font-size: calc(100vw * 30 / 750);
         height: auto;
         flex-direction: column;
+    }
+
+    .project_text div:nth-child(2) {
+        font-size: calc(100vw * 18 / 750);
     }
 
     .project_img {

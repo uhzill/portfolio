@@ -1,6 +1,12 @@
 @font-face {
-    font-family: 'Gmarket Sans';
+    font-family: 'Gmarket Sans Bold';
     src: url('./font/GmarketSansBold.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    src: url('./font/GmarketSansMedium.otf');
     font-style: normal;
 }
 
@@ -86,7 +92,7 @@ nav li:nth-last-child(1) {
 }
 
 nav li a {
-    font-family: 'Gmarket Sans';
+    font-family: 'Gmarket Sans Bold';
     font-size: 35px;
     color: var(--bg-color);
 }
@@ -221,9 +227,13 @@ footer {
 
 @media (max-width: 750px) {
 
+    h2 {
+        margin: 10vw;
+    }
+
     .hamburgerBtn {
-        top: 8vw;
-        right: 8vw;
+        top: 3vw;
+        right: 3vw;
     }
 
     nav li a {

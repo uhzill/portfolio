@@ -18,7 +18,7 @@ main {
 }
 
 h2 {
-    font-family: 'Gmarket Sans';
+    font-family: 'Gmarket Sans Bold';
     font-size: 30px;
     margin: 3vw;
     color: var(--bg-color);
@@ -346,6 +346,7 @@ ul.left_box li {
 
 
 @media (max-width: 750px) {
+
     .profile_box h3 {
         text-align: center;
         margin-bottom: 50px;
@@ -491,6 +492,10 @@ ul.left_box li {
         top: 25%;
     }
 
+    .profile_img {
+        margin-left: 0;
+    }
+
     .profile_box .profile_img {
         text-align: center;
     }
@@ -526,6 +531,7 @@ ul.left_box li {
 
     .contact_box:nth-last-of-type(1) p {
         text-align: center;
+        font-size: calc(100vw * 18 / 750);
     }
 
     .contact_img {
